@@ -7,7 +7,7 @@ const Users = require("./Users");
 const Orders = require("./Orders");
 
 const app = express();
-const port = 3001;
+const port = process.env.PORT || 8000;
 const stripe = require("stripe")(
   "sk_test_51N4ItXSA31OzsnIOI1Gek4ilecTcznqohz1LI0si0hgGzU5YDEiOaOdXiaIYFeTBsLJhG0iMFmKoTc5sVZjlAoRu00rqQ6iWPO"
 );
